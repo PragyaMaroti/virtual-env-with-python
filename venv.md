@@ -29,5 +29,14 @@ Once you are done with the work, you can deactivate the virtual environment by t
 
 (virtualenv_name)$ deactivate  
 
+
+### steps with python 3:(3.8)
+- have python installed
+- have pip installed
+- pip install virtualenv
+- cd (the folder where virtual env has to be created)
+- virtualenv _name of the virtual env to be given_ . Ex : virtaulenc venv    (a folder name venv will be created in the location, containing a set of files likw scripts etc)
+- venv\Scripts\activate ( then it looks like: (venv) C:\Users\PRAGY\Desktop\rasa project>  (depending on your addresses)) . The virtual env is now active.
+
 Python virtual env documentation link: https://docs.python.org/3/library/venv.html
 
