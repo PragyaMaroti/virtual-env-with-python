@@ -42,3 +42,19 @@ Once you are done with the work, you can deactivate the virtual environment by t
 
 Python virtual env documentation link: https://docs.python.org/3/library/venv.html   
 https://docs.python.org/3/tutorial/venv.html (commands to be used inside virtual env)
+
+--------------------------------------------
+
+### Difference between venv and virtualenv:
+venv is a subset of virtualenv integrated into the standard library since Python 3.3. The subset meaning that only part of virtualenvs functionality is in venv:
+
+➡️venv can be slower since it does not have "app-data seed method"  
+➡️venv is only upgraded via upgrading the Python version, while virtualenv is updated using pip.  
+➡️venv is not extendable  
+:arrow_right: virtualenv have more rich programmatic API (describe virtual environments without creating them). See the venv API here.  
+➡️venv cannot automatically discover arbitrarily installed python versions, while virtualenv does. This means, that with venv you have to specify the full path of the python executable, if you want to use some other python version than the first one in the PATH. With virtualenv, you can just give the version number. See python discovery in the virtualenv documentation.  
+To me the differences are quite subtle and the only practical difference has been that **venv is included in the standard library (since 3.3)**. I have been using python -m venv venv for a long time and have never needed an alternative.
+
+source: stack overflow
+
+--------------------------------------------------------------
