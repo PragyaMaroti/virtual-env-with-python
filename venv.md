@@ -36,7 +36,7 @@ Once you are done with the work, you can deactivate the virtual environment by t
 - pip install virtualenv
 - cd (the folder where virtual env has to be created)
 - virtualenv _name of the virtual env to be given_ . Ex : virtaulenc venv    (a folder name venv will be created in the location, containing a set of files likw scripts etc)
-- venv\Scripts\activate ( then it looks like: (venv) C:\Users\PRAGY\Desktop\rasa project>  (depending on your addresses)) . The virtual env is now active.
+- venv\Scripts\activate ( then it looks like: (venv) C:\Users\PRAGY\Desktop\rasa project>  (depending on your addresses)) . The virtual env is now active. (Note: venv is the name of our virtual env)
 - to install packages/ dependencies, . For example if you are using Django 1.9 for a project, you can install it like you install other packages. command :(virtualenv_name)$ pip install Django==1.9. The Django 1.9 package will be placed in virtualenv_name folder and will be isolated from the complete system.  
 - (virtualenv_name)$ deactivate : command to deactivate the virtual env , once the work is done.
 
