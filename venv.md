@@ -9,25 +9,42 @@ To solve this problem, we just need to create two separate virtual environments 
 We use a module named virtualenv which is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
 
 #### commands to install virtual environment:
-pip install virtualenv
 
-__to check the version:  virtualenv -- version__
+- __To install virtual environments__
+      
+       pip install virtualenv
 
-__to create a virtual environment:__  virtualenv name    
+- - __to check the version:__  <br>
+        
+        virtualenv -- version
+
+- __to create a virtual environment:__ <br>
+              
+           virtualenv name    
 After running this command, a directory named my_name will be created. This is the directory which contains all the necessary executables to use the packages that a Python project would need.
-If you want to specify Python interpreter of your choice, for example Python 3, it can be done using the following command:
-virtualenv -p /usr/bin/python3 virtualenv_name  
-To create a Python 2.7 virtual environment, use the following command:  
+- If you want to specify Python interpreter of your choice, for example Python 3, it can be done using the following command:<br>
 
-$ virtualenv -p /usr/bin/python2.7 virtualenv_name  
+              virtualenv -p /usr/bin/python3 virtualenv_name  
+- __To create a Python 2.7 virtual environment, use the following command:__  
 
-After creating virtual environment, you need to activate it. Remember to activate the relevant virtual environment every time you work on the project.
-Command for activation:  source virtualenv_name/bin/activate  
-Now you can install dependencies related to the project in this virtual environment.
+       $ virtualenv -p /usr/bin/python2.7 virtualenv_name  
 
-Once you are done with the work, you can deactivate the virtual environment by the following command:
+- __After creating virtual environment, you need to activate it. Remember to activate the relevant virtual environment every time you work on the project.
+Command for activation:__ <br>
 
-(virtualenv_name)$ deactivate  
+          source virtualenv_name/bin/activate
+          
+**If this doesn't work then we can use this command (where our scripts folder is located)**<br>
+            
+          C:\> virtualenv\Scripts\activate
+          
+- Now you can install dependencies related to the project in this virtual environment.
+
+- __Once you are done with the work, you can deactivate the virtual environment by the following command:__
+
+      (virtualenv_name)$ deactivate
+  
+  
 
 
 ### steps with python 3:(3.8)
